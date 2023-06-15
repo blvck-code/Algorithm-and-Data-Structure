@@ -30,9 +30,9 @@
  * all but one of the values in A occur an even number of times.
  */
 
-const arr = [9, 1, 9, 3, 9, 7, 9];
+const arr: number[] = [9, 1, 9, 3, 9, 7, 9];
 
-const solution = (arr) => {
+const solution = (arr): number => {
     let N = [...arr] // copy of original array
     N.sort((a, b) => { // sort array in descending order
         return b - a
